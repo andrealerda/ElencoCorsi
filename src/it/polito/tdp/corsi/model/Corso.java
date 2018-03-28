@@ -1,36 +1,44 @@
 package it.polito.tdp.corsi.model;
 
 public class Corso {
-	
-	private String codIns ;
-	private int crediti ;
-	private String nome ;
-	private int pd ;
+
+	private String codIns;
+	private int crediti;
+	private String nome;
+	private int pd;
+
 	public String getCodIns() {
 		return codIns;
 	}
+
 	public void setCodIns(String codIns) {
 		this.codIns = codIns;
 	}
+
 	public int getCrediti() {
 		return crediti;
 	}
+
 	public void setCrediti(int crediti) {
 		this.crediti = crediti;
 	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public int getPd() {
 		return pd;
 	}
+
 	public void setPd(int pd) {
 		this.pd = pd;
 	}
-	
+
 	public Corso(String codIns, int crediti, String nome, int pd) {
 		super();
 		this.codIns = codIns;
@@ -38,7 +46,7 @@ public class Corso {
 		this.nome = nome;
 		this.pd = pd;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -46,7 +54,7 @@ public class Corso {
 		result = prime * result + ((codIns == null) ? 0 : codIns.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -63,13 +71,10 @@ public class Corso {
 			return false;
 		return true;
 	}
+
 	@Override
 	public String toString() {
-		return "Corso [codIns=" + codIns + ", crediti=" + crediti + ", nome=" + nome + ", pd=" + pd + "]";
+		return "codIns: " + codIns + ", crediti: " + crediti + ", nome: " + nome + ", pd: " + pd;
 	}
-	
-	
-	
-	
 
 }
